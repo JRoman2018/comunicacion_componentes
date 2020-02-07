@@ -25,11 +25,11 @@
                 numero: 10
             },
             mutations: {
-                aumentar(state) {
-                    state.numero++;
+                aumentar(state, n) {
+                    state.numero += n;
                 },
-                disminuir(state) {
-                    state.numero--;
+                disminuir(state, n) {
+                    state.numero -= n;
                 }
             }
         });
